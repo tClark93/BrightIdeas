@@ -1,0 +1,57 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/Ideas.css" asp-append-version="true" />
+</head>
+<body>
+@model ViewModel
+    <div class="everything">
+        <div>
+            <div class="head">
+                <h1>Welcome, @Model.User.Alias</h1>
+                <a href="logout" class="badge badge-primary">Log Out</a>
+            </div>
+            <div class="top">
+                <h2>Share a Bright Idea:</h2>
+                <form asp-action="share" asp-controller="Home" method="post">
+                    <div class="form-group">
+                        <span asp-validation-for="Idea.Content"></span>
+                        <textarea asp-for="Idea.Content" class="form-control"rows="5"></textarea>
+                    </div>
+                    <button type="submit">Post!</button>
+                </form>
+            </div>
+            @foreach(var idea in @Model.AllIdeas)
+            {
+                <div class="Messages">
+                    <div class="posts">
+                        <h5><a href="/user/@idea.Author.id">@idea.Author.Alias</a> says:</h5>
+                        <p>@idea.Content</p>
+                        <div class="likes">
+                            @if(@idea.Userid == @Model.User.id)
+                            {
+                                <a href="delete/@idea.id" style="background-color: red;" class="badge badge-primary">Delete</a>
+                            }
+                            @{
+                                int Count = 0;
+                            }
+                            @foreach(var u in @idea.LikedBy) 
+                            {
+                                @if(@u.LikedByUser.id == @Model.User.id) {
+                                    Count = 1;
+                                }
+                            }
+                            @if(Count == 1) 
+                            {
+                                <a class="badge badge-primary">Liked</a>
+                            } 
+                            else
+                            {
+                                <a href="like/@idea.id" class="badge badge-primary">Like</a>
+                            }
+                            <span><a href="idea/@idea.id">@idea.LikedBy.Count People Like This</a></span>
+                        </div>
+                    </div>
+                </div>
+            }        
+        </div>
+    </div>
+</body>

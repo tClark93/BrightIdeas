@@ -1,0 +1,94 @@
+.everything{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+.head h1{
+    font-size: 50pt;
+}
+.top{
+    margin:50px;
+    margin-top: 0px;
+}
+.head .badge{
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #2a2a2a;
+    margin: 33px;
+    font-size: 12pt;
+}
+.top span{
+    color:red;
+}
+.top h2{
+    margin: 50px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+}
+
+.top button{
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 12px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: darkblue;
+}
+.top a{
+    float: right;
+    margin-top: -30px;
+    font-size: 18pt;
+}
+
+.messages{
+    margin: 50px;
+    margin-left: 75px;
+    margin-right: 75px;
+    border-bottom: 1px solid #b4b4b4 
+}
+.likes{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.likes span{
+    font-size: 10pt;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.msg{
+    display: flex;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.likes .badge{
+    padding: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: darkblue;
+    margin: 2px;
+    font-size: 10pt;
+    font-weight: normal;
+}
+
+.msg textarea{
+    width: 800px;
+}
+.Comments{
+    margin-left: 50px;
+    margin-right: 50px;
+}

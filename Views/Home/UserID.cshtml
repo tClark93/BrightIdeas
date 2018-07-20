@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" href="~/css/Userid.css" asp-append-version="true" />
+</head>
+<body>
+@model ViewModel
+
+    <div class="wrapper">
+        <div class = "header">
+            <a href="/ideas">Bright Ideas</a>
+            <a class="logout" href="/logout">Log Out</a>
+        </div>
+        <div class="userinfo">
+            <h1>Name: @Model.User.Name</h1>
+            <h1>Alias: @Model.User.Alias</h1>
+            <h1>Email: @Model.User.Email</h1>
+        </div>
+        <div class="counts">
+            <h4>Total Number of Posts: @Model.UsersIdeas.Count()</h4>
+            <h4>Total Number of Likes: @Model.LikedIdeas.Count()</h4>
+        </div>
+    </div>
+</body>

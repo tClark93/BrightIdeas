@@ -1,0 +1,11 @@
+/Users/Troy/Documents/Dojo/C#/ORMs/BrightIdeas/bin/Debug/netcoreapp2.0/BrightIdeas.deps.json
+/Users/Troy/Documents/Dojo/C#/ORMs/BrightIdeas/bin/Debug/netcoreapp2.0/BrightIdeas.runtimeconfig.json
+/Users/Troy/Documents/Dojo/C#/ORMs/BrightIdeas/bin/Debug/netcoreapp2.0/BrightIdeas.runtimeconfig.dev.json
+/Users/Troy/Documents/Dojo/C#/ORMs/BrightIdeas/bin/Debug/netcoreapp2.0/BrightIdeas.dll
+/Users/Troy/Documents/Dojo/C#/ORMs/BrightIdeas/bin/Debug/netcoreapp2.0/BrightIdeas.pdb
+/Users/Troy/Documents/Dojo/C#/ORMs/BrightIdeas/obj/Debug/netcoreapp2.0/BrightIdeas.csprojResolveAssemblyReference.cache
+/Users/Troy/Documents/Dojo/C#/ORMs/BrightIdeas/obj/Debug/netcoreapp2.0/BrightIdeas.csproj.CoreCompileInputs.cache
+/Users/Troy/Documents/Dojo/C#/ORMs/BrightIdeas/obj/Debug/netcoreapp2.0/BrightIdeas.AssemblyInfoInputs.cache
+/Users/Troy/Documents/Dojo/C#/ORMs/BrightIdeas/obj/Debug/netcoreapp2.0/BrightIdeas.AssemblyInfo.cs
+/Users/Troy/Documents/Dojo/C#/ORMs/BrightIdeas/obj/Debug/netcoreapp2.0/BrightIdeas.dll
+/Users/Troy/Documents/Dojo/C#/ORMs/BrightIdeas/obj/Debug/netcoreapp2.0/BrightIdeas.pdb

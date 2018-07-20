@@ -1,0 +1,43 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/Ideaid.css" asp-append-version="true" />
+</head>
+<body>
+@model ViewModel
+    <div class="wrapper">
+        <div class = "header">
+            <a href="/ideas">Bright Ideas</a>
+            <a class="logout" href="/logout">Log Out</a>
+        </div>
+        <div class="quote">
+            <h5><a href="/user/@Model.Idea.Author.id">@Model.Idea.Author.Alias</a> says:</h5>
+            <div class="center">
+            <p>@Model.Idea.Content</p>
+            </div>
+        </div>
+        <div class="likeby">
+            <h3>People who liked this post</h3>
+            <div class="center">
+                <table>
+                    <tr>
+                        <th>Alias</th>
+                        <th>Name</th> 
+                    </tr>
+                    
+                    @foreach(var x in @Model.LikedBy)
+                    {
+                        @foreach( var pair in @x.LikedBy)
+                        {
+                            @if(@pair.LikedIdea.id == @Model.Idea.id)
+                            {
+                            <tr>
+                                <td><a href="/user/@pair.LikedByUser.id">@pair.LikedByUser.Alias</a></td>
+                                <td>@pair.LikedByUser.Name</td> 
+                            </tr>
+                            }
+                        }     
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+</body>

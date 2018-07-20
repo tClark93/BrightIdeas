@@ -1,0 +1,69 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+</head>
+<body>
+@model LoginView
+    <div class="wrapper">
+        <h1>Bright Ideas</h1>
+        <div class="forms">
+            <div class="registration">
+                <h2>Register:</h2>
+                <form asp-action="register" asp-controller="Home" method="POST">
+                    <div class="inp form-group">
+                        <div class="warning">
+                            <label>Name:</label>
+                            <span asp-validation-for="regUser.Name"></span>
+                        </div>
+                        <input asp-for="regUser.Name" type="text" class="form-control">
+                    </div>
+                    <div class="inp form-group">
+                        <div class="warning">
+                            <label>Alias:</label>
+                            <span asp-validation-for="regUser.Alias"></span>
+                        </div> 
+                        <input asp-for="regUser.Alias" type="text" class="form-control">
+                    </div>
+                    <div class="inp form-group">
+                        <div class="warning">
+                            <label>Email:</label>
+                            <span asp-validation-for="regUser.Email"></span>
+                        </div>
+                        <input asp-for="regUser.Email" type="Email" class="form-control">
+                    </div>
+                    <div class="inp form-group">
+                        <div class="warning">
+                            <label>Password:</label>
+                            <span asp-validation-for="regUser.Password"></span>
+                        </div>
+                        <input asp-for="regUser.Password" type="Password" class="form-control">    
+                    </div>
+                    <div class="inp form-group">
+                        <div class="warning">
+                            <label>Confirm Password:</label>
+                            <span asp-validation-for="regUser.Confirm"></span>
+                        </div>
+                        <input asp-for="regUser.Confirm" type="Password" class="form-control">
+                    </div>
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="login">
+                <h2>Login:</h2>
+                <form asp-action="login" asp-controller="Home" method="POST">
+                    <div class="inp form-group">
+                        <label>Email:</label>
+                        <input asp-for="logUser.Email" type="text" class="form-control">
+                    </div>
+                    <div class="inp form-group">
+                        <div class="warning">
+                            <label>Password:</label>
+                            <span asp-validation-for="logUser.Password"></span>
+                        </div>
+                        <input asp-for="logUser.Password" type="Password" class="form-control">    
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
